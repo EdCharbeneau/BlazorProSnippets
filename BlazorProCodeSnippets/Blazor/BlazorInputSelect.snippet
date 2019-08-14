@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Blazor InputSelect</Title>
+      <Author>Ed Charbeneau
+      </Author>
+      <Description>Code snippet for Blazor InputSelect
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>bselect</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>SelectedItemValue</ID>
+          <ToolTip>SelectedItemValue</ToolTip>
+          <Default>model.SelectedItemValue</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>item</ID>
+          <ToolTip>item</ToolTip>
+          <Default>item</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>Items</ID>
+          <ToolTip>Items</ToolTip>
+          <Default>mode.Items</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="html" Delimiter="$"><![CDATA[<InputSelect @bind-Value="$SelectedItemValue$">
+    @foreach (var $item$ in $Items$)
+    {
+        <option value="@$item$">@$item$</option>
+    }
+</InputSelect>$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

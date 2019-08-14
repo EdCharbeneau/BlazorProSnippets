@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <Title>Blazor EditForm</Title>
+      <Author>Ed Charbeneau</Author>
+      <Description>Code snippet for Blazor InputDate
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>bform</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>HandleValidSubmit</ID>
+          <ToolTip>The delegate to call when a valid form is submission occurs.</ToolTip>
+          <Default>HandleValidSubmit</Default>
+          <Function>HandleValidSubmit</Function>
+        </Literal>
+        <Object Editable="true">
+          <ID>model</ID>
+          <ToolTip>The instance of model to validate and submit.</ToolTip>
+          <Default>model</Default>
+          <Function>
+          </Function>
+          <Type>
+          </Type>
+        </Object>
+      </Declarations>
+      <Code Language="html" Delimiter="$"><![CDATA[<EditForm Model="$model$" OnValidSubmit="$HandleValidSubmit$">
+    <DataAnnotationsValidator/>
+    <ValidationSummary/>$end$
+    <button type="submit">Submit</button>
+</EditForm>]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

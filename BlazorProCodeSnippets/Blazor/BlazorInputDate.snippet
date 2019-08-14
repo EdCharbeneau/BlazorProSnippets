@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Blazor InputDate</Title>
+      <Author>Ed Charbeneau
+      </Author>
+      <Description>Code snippet for Blazor InputDate
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>bdate</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>model</ID>
+          <ToolTip>model</ToolTip>
+          <Default>model.MyDate</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="html" Delimiter="$"><![CDATA[<InputDate @bind-Value="$model$" />$end$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
