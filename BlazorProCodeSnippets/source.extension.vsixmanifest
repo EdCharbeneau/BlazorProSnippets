@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="BlazorProCodeSnippets.c9c41d67-f97e-4f93-9637-78621dd8a65e" Version="1.0.1" Language="en-US" Publisher="Ed Charbeneau" />
-        <DisplayName>BlazorProCodeSnippets</DisplayName>
-        <Description>Empty VSIX Project.</Description>
+        <Identity Id="BlazorProCodeSnippets.c9c41d67-f97e-4f93-9637-78621dd8a65e" Version="1.0.2" Language="en-US" Publisher="Ed Charbeneau" />
+        <DisplayName>Blazor Pro Code Snippets</DisplayName>
+        <Description xml:space="preserve">Code snippets for the Blazor framework.</Description>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)" />
