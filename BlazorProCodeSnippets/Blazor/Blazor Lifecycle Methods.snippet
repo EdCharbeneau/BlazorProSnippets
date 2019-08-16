@@ -32,11 +32,29 @@
         </Literal>
       </Declarations>
       <Code Language="html" Delimiter="$"><![CDATA[@code {
+
     [Parameter] public $Object$ $MyObject$ { get; set; }
 
-    protected override async Task OnInitializedAsync() {
-        // init here$end$
+    protected override async Task OnInitializedAsync()
+    {
+        $end$
+        // execute code to initialize the component
     }
+
+    protected override async Task OnAfterRenderAsync()
+    {
+        // when values are assigned to properties
+        // fires after initialize and executes each render
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        // Use this stage to perform additional initialization 
+        // steps using the rendered content, 
+        // such as activating third-party JavaScript libraries 
+        // that operate on the rendered DOM elements.
+    }
+
 }]]></Code>
     </Snippet>
   </CodeSnippet>
